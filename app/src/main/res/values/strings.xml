@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="add_data">Add data</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">Add</string>
+    <string name="enter_note">Enter note</string>
+    <string name="note">set the note</string>
+    <string name="save">note saved</string>
+    <string name="not_save">note is note saved</string>
+    <string name="notes">note</string>
+    <string name="no_note">No notes are there</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="edit_note_here">Edit note here</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="updated">note is updated</string>
+</resources>
