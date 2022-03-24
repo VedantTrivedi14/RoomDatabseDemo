@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.myapplication.Model;
+package com.tatvasoftassignment.myapplication.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.tatvasoftassignment.myapplication.database.NoteDao;
 import com.tatvasoftassignment.myapplication.database.NoteRoomDB;
+import com.tatvasoftassignment.myapplication.model.Note;
 
 import java.util.List;
 
@@ -29,9 +30,11 @@ public class NoteViewModel extends AndroidViewModel {
         new InsertAsyncTask(noteDao).execute(note);
     }
 
-    public void update(Note note) {new UpdateAsyncTask(noteDao).execute(note);}
+    public void update(Note note) {
+        new UpdateAsyncTask(noteDao).execute(note);}
 
-    public void delete(Note note) {new DeleteAsyncTask(noteDao).execute(note);}
+    public void delete(Note note) {
+        new DeleteAsyncTask(noteDao).execute(note);}
 
     public LiveData<List<Note>> getAllNotes(){
         return mAllNotes;
@@ -61,7 +64,7 @@ public class NoteViewModel extends AndroidViewModel {
         }
     }
 
-    private class UpdateAsyncTask extends AsyncTask<Note, Void, Void>{
+    private static class UpdateAsyncTask extends AsyncTask<Note, Void, Void>{
         NoteDao mNoteDao;
         public UpdateAsyncTask(NoteDao noteDao) {
             this.mNoteDao = noteDao;
@@ -75,7 +78,7 @@ public class NoteViewModel extends AndroidViewModel {
     }
 
 
-    private class DeleteAsyncTask extends AsyncTask<Note, Void, Void>{
+    private static class DeleteAsyncTask extends AsyncTask<Note, Void, Void>{
         NoteDao mNoteDao;
         public DeleteAsyncTask(NoteDao noteDao) {
             this.mNoteDao = noteDao;

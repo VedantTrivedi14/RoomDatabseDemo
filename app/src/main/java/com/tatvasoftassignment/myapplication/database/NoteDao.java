@@ -7,7 +7,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
-import com.tatvasoftassignment.myapplication.Model.Note;
+import com.tatvasoftassignment.myapplication.model.Note;
 
 import java.util.List;
 

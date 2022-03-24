@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.myapplication.Model;
+package com.tatvasoftassignment.myapplication.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.tatvasoftassignment.myapplication.database.NoteDao;
 import com.tatvasoftassignment.myapplication.database.NoteRoomDB;
+import com.tatvasoftassignment.myapplication.model.Note;
 
 public class EditNoteViewModel extends AndroidViewModel {
 

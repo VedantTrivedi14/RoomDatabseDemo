@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.myapplication.Model;
+package com.tatvasoftassignment.myapplication.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

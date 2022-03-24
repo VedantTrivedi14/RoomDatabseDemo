@@ -6,7 +6,7 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-import com.tatvasoftassignment.myapplication.Model.Note;
+import com.tatvasoftassignment.myapplication.model.Note;
 
 
 @Database(entities = Note.class, version = 1)

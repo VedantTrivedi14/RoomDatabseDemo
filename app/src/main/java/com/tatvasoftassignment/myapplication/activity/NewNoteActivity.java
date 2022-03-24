@@ -1,12 +1,13 @@
-package com.tatvasoftassignment.myapplication.Activity;
+package com.tatvasoftassignment.myapplication.activity;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.tatvasoftassignment.myapplication.R;
-import com.tatvasoftassignment.myapplication.Utils.Constant;
+import com.tatvasoftassignment.myapplication.utils.Constant;
 import com.tatvasoftassignment.myapplication.databinding.ActivityNewNoteBinding;
 
 public class NewNoteActivity extends AppCompatActivity {
@@ -16,9 +17,7 @@ public class NewNoteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_note);
-        binding = ActivityNewNoteBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_new_note);
 
         binding.btnClick.setOnClickListener(v -> {
             if (isValid()) {
